@@ -1,0 +1,34 @@
+name:           tagged-hashable
+version:        0.1
+synopsis:       Orphan Hashable instance for Tagged
+license:        MPL-2.0
+license-file:   LICENSE
+author:         Shane O'Brien
+maintainer:     shane@duairc.com
+stability:      Experimental
+category:       Type
+cabal-version:  >= 1.6
+build-type:     Simple
+homepage:       https://github.com/duairc/tagged-hashable
+bug-reports:    https://github.com/duairc/tagged-hashable/issues
+
+extra-source-files:
+  LICENSE
+
+library
+  hs-source-dirs:
+    src
+
+  exposed-modules:
+    Data.Tagged.Hashable
+
+  build-depends:
+    base > 4 && < 6,
+    hashable >= 1.2 && < 1.3,
+    tagged >= 0.1 && < 0.9
+
+  ghc-options: -Wall
+
+source-repository head
+  type:     git
+  location: https://github.com/duairc/tagged-hashable.git
